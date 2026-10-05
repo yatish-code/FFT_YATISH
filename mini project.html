@@ -1,0 +1,371 @@
+
+<html>
+<head>
+    <title>College Event</title>
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .banner {
+            background-color: lightcoral;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+        }
+
+        .banner p {
+            font-size: 20px;
+        }
+        section {
+            background-color:rgb(129, 129, 165);
+            margin: 20px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color:black;
+        }
+        .details {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .detail-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 25%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color:lightblue;
+            color: white;
+        }
+        .speakers {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .speaker {
+            background-color:white;
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            margin: 10px;
+            border-radius: 10px;
+            animation: speaker 5s ease 1;
+        
+        }
+        .speaker img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+ ;
+        }
+        @keyframes speaker
+         {
+          0% {
+                transform: translate(100%);
+           }
+             100% {
+              transform: translate(10px);
+            }
+        }
+
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: lightgreen;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:gray;
+        }
+        .contact {
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .banner h1 {
+                font-size: 28px;
+            }
+
+            .details {
+                display: block;
+            }
+
+            .detail-box {
+                width: auto;
+            }
+
+            .speakers {
+                display: block;
+            }
+
+            .speaker {
+                width: auto;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#details">Details</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    
+    <div class="banner" id="home">
+
+        <h1>College Fest 2026</h1>
+
+        <p>joy • Fun • Connect</p>
+
+        <p>
+            Join us for an exciting college fest
+            
+        </p>
+
+    </div>
+    <section id="details">
+
+        <h2>Event Details</h2>
+
+        <div class="details">
+
+            <div class="detail-box">
+                <h3>Date</h3>
+                <p>10 October 2026</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Time</h3>
+                <p>9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Venue</h3>
+                <p>Alfrsco</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="schedule">
+
+        <h2>Event Schedule</h2>
+
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Venue</th>
+            </tr>
+
+            <tr>
+                <td>9:00 AM</td>
+                <td>Registration</td>
+                <td>Main Hall</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM</td>
+                <td>Inauguration</td>
+                <td>Auditorium</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Lunch</td>
+                <td>Cafeteria</td>
+            </tr>
+
+            <tr>
+                <td>2:00 PM</td>
+                <td>dance perfromance</td>
+                <td>Seminar Hall</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>End</td>
+                <td>Auditorium</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section id="speakers">
+
+        <h2>Our Speakers</h2>
+
+        <div class="speakers">
+
+            <div class="speaker">
+
+                <img src="./mini project img.png " class="speaker">
+
+                <h3>Dr.RAGHAV KATHULA </h3>
+                
+
+                <p>Full Stack Developer </p>
+
+            </div>
+
+
+            <div class="speaker">
+
+                <img src="./narendra-modi.jpg" class="speaker">
+
+                <h3>Narendra Modi</h3>
+
+                <p>Prime Ministe of India</p>
+
+            </div>
+
+
+            <div class="speaker">
+
+                <img src="./images (18).jpg" class="speaker">
+
+                <h3>Sudha Murty</h3>
+
+                <p>Member of Rajya Sabha</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="register">
+
+        <h2>Registration Form</h2>
+
+        <form>
+
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone:</label>
+            <input type="tel" placeholder="Enter phone number">
+
+            <label>Department:</label>
+
+            <select>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>Bsc</option>
+                <option>B.Com</option>
+            </select>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: allianceuniversity@gmail.com</p>
+
+        <p>Phone: +919032895389</p>
+
+        <p>Address: Alliance University Anakel, Bengaluru</p>
+
+    </section>
+
+    <footer style="background-color:gray; color:white;text-align:center; padding:15px;">
+
+        <p> 2026 College Fest</p>
+
+    </footer>
+
+</body>
+</html>
+
+
+

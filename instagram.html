@@ -1,0 +1,114 @@
+
+<html>
+
+<head>
+    <title>Instagram Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif
+        
+            
+        }
+
+        body {
+            background-color: rgb(23, 23, 23);
+        }
+
+        #login-form {
+            width: 45%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            min-height: 100vh;
+            padding: 155px 60px;
+            border-left: 3px solid gray;
+            color: gray;
+            background-color:rgb(42, 41, 41)
+
+           }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 22px;
+            color: #fbfafa;
+        }
+
+        input {
+            width: 100%;
+            height: 72px;
+            padding: 20px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border: 1px solid #585a5e;
+            border-radius: 18px;
+            background-color: rgb(84, 83, 81);
+        }
+
+        #login {
+            width: 100%;
+            height: 55px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 30px;
+            background-color: #1877f2;
+            color: rgb(255, 251, 251);
+            font-size: 18px;
+         
+        }
+
+        #forgot {
+            text-align: center;
+            margin: 30px 0 75px;
+            font-size: 18px;
+            border-radius: 50px;
+            width: 100%;
+            height: 55%;
+            padding: 10px;
+            color: white;
+          
+        }
+        #forgot:hover{
+            background-color: lightgray;
+      
+
+        }
+
+        #create-account {
+            width: 100%;
+            height: 55px;
+            background-color:gray;
+            border: 1px solid #1877f2;
+            border-radius: 30px;
+            color: #1877f2;
+            font-size: 17px;
+           
+        }
+          
+        
+    </style>
+</head>
+
+<body>
+
+    <form id="login-form">
+
+        <h2>Log in to Instagram</h2>
+
+        <input type="text" placeholder="Mobile number,user name or email">
+
+        <input type="password" placeholder="Password">
+
+        <button type="submit" id="login">Log in</button>
+
+        <p id="forgot">Forget password?</p>
+
+        <button type="button" id="create-account">Create new account</button>
+
+    </form>
+</body>
+
+</html>
