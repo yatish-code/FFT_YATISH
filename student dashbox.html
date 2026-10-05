@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intractive student result daskbox</title>
+</head>
+<body>
+
+    <h1>Inteactive student result dashboard</h1>
+    <form>
+        <label >student name : </label>
+        <input type="text" name="n1" id="i1"><br><br>
+        <label >reg  no</label>
+        <input type="number" name="n2" id="i2"><br><br>
+        <label >html marks:</label>
+        <input type="number" name="n3" id="i3"><br><br>
+        <label >css marks : </label>
+        <input type="number" name="n4" id="i4"><br><br>
+        <label >js mark: </label>
+        <input type="number" name="n5" id="i5"><br><br>
+        <button>result</button>
+
+
+    </form>
+    <script>
+        function Check(){
+            let n1 = document.getElementById("i1").value;
+            let n2 = document.getElementById("i2").value;
+            let n3 = Number (document.getElementById("i3").value);
+            let n4 = Number (document.getElementById("i4").value);
+            let n5 = Number (document.getElementById("i5").value);
+
+            let total = n3+n4+n5;
+            let average = total/3;
+
+           
+
+
+
+        }
+    </script>
+</body>
+</html>
